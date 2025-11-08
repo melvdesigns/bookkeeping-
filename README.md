@@ -167,7 +167,7 @@
 
 <header>
   <h1>Melvin Jay Canoy</h1>
-  <p>Professional Accounting & Bookkeeping Services for Businesses</p>
+  <p> Accounting & Bookkeeping Services for Businesses</p>
 </header>
 
 <main class="container">
