@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -37,11 +36,18 @@
 
     header {
       background: linear-gradient(135deg, var(--primary), #154c7a);
-      padding: 80px 20px;
+      padding: 80px 0; /* Removed horizontal padding for full width */
       text-align: center;
       color: white;
       box-shadow: 0 4px 20px var(--shadow);
       position: relative;
+      width: 100%;
+    }
+
+    .header-content {
+      max-width: 1000px; /* Matches the container below for consistency */
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     header h1 {
@@ -148,7 +154,11 @@
     /* Responsive adjustments */
     @media (max-width: 768px) {
       header {
-        padding: 60px 20px;
+        padding: 60px 0; /* Adjusted for mobile */
+      }
+
+      .header-content {
+        padding: 0 20px;
       }
 
       section {
@@ -166,8 +176,10 @@
 <body>
 
 <header>
-  <h1>Melvin Jay Canoy</h1>
-  <p> Accounting & Bookkeeping Services for Businesses</p>
+  <div class="header-content">
+    <h1>Melvin Jay Canoy</h1>
+    <p> Accounting & Bookkeeping Services for Businesses</p>
+  </div>
 </header>
 
 <main class="container">
