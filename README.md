@@ -173,7 +173,7 @@
 <main class="container">
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a bookkeeping and accounting professional with experience managing financial records, analyzing business transactions, and preparing accurate financial statements. I help businesses stay compliant, organized, and financially informed by maintaining clean and reliable books.</p>
+    <p> As a dedicated bookkeeper, I specialize in maintaining accurate and up-to-date records for small businesses and entrepreneurs. My expertise includes reconciling accounts, processing payroll, managing invoices, and ensuring compliance with tax regulations using tools like QuickBooks, Xero, and Excel. I thrive on bringing order to complex financial data, helping clients make informed decisions and avoid costly errors. Passionate about precision and efficiency, I'm committed to supporting businesses in achieving financial stability and growth. When I'm not balancing books, you can find me exploring new accounting trends or volunteering for community financial literacy programs. Let's connect if you're looking to streamline your finances. </p>
   </section>
 
   <section id="services">
