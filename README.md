@@ -5,7 +5,7 @@
 
   <!-- ✨ EDIT YOUR WEBSITE / BUSINESS NAME + LINK HERE ✨ -->
   <script>
-    const siteName = "Melvin Jay Canoy"; // Change your website/business name
+    const siteName = "Melvin's Accounting/Bookkeeping Services"; // Change your website/business name
     // const siteLink removed // Change your website link/domain anytime
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -56,7 +56,6 @@
       <li>Bank & Account Reconciliation</li>
       <li>Accounts Payable & Receivable Management</li>
       <li>Financial Statement Preparation & Reporting</li>
-      <li>Payroll Processing & Recording</li>
       <li>Book Cleanup & Catch-Up for Backlogged Records</li>
     </ul>
   </section>
@@ -78,7 +77,7 @@
 </div>
 
 <footer>
-  <p>© 2025 <span id="footer-name"></span> — Accounting & Bookkeeping</p>
+  <p>© 2025 <span id="footer-name"></span> — Melvin's Accouting/Bookkeeping Services </p>
 </footer>
 
 </body>
