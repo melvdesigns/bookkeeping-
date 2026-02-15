@@ -1,164 +1,217 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional bookkeeping and accounting services including reconciliation, payroll, financial reporting, and book cleanup for small businesses.">
-  <meta name="keywords" content="bookkeeping, accounting services, payroll, financial reports, reconciliation, QuickBooks, Xero">
-  <meta property="og:title" content="Melvin Jay Canoy | Bookkeeping & Accounting Services">
-  <meta property="og:description" content="Accurate bookkeeping, clean reconciliations, and reliable financial reporting for growing businesses.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional bookkeeping and accounting services including reconciliation, payroll, financial reporting, and book cleanup for small businesses.">
 
-  <title>Melvin Jay Canoy | Bookkeeping & Accounting</title>
+<title>Melvin Jay Canoy | Bookkeeping & Accounting</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --primary: #0a2640;
-      --secondary: #4a90e2;
-      --accent: #ffd700;
-      --text: #2a2a2a;
-      --bg: #eef2f5;
-      --card: #ffffff;
-      --shadow: rgba(0, 0, 0, 0.08);
-    }
+<style>
+:root {
+  --primary: #0a2640;
+  --secondary: #4a90e2;
+  --bg: #eef2f5;
+  --card: #ffffff;
+  --text: #2a2a2a;
+  --shadow: rgba(0,0,0,0.08);
+}
 
-    * {
-      box-sizing: border-box;
-    }
+* { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, var(--primary), #154c7a);
-      padding: 90px 20px;
-      text-align: center;
-      color: white;
-    }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
 
-    header h1 {
-      font-size: clamp(2.2rem, 5vw, 3rem);
-      margin-bottom: 10px;
-    }
+/* ===== NAVIGATION ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
-    header p {
-      max-width: 650px;
-      margin: auto;
-      font-size: 1.1rem;
-    }
+nav .logo {
+  font-weight: 600;
+  color: var(--primary);
+}
 
-    /* CONTAINER */
-    .container {
-      max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
 
-    /* SECTIONS */
-    section {
-      background: var(--card);
-      padding: 40px;
-      border-radius: 14px;
-      margin-bottom: 30px;
-      box-shadow: 0 6px 18px var(--shadow);
-      border: 1px solid #dde6ee;
-    }
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
 
-    h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      color: var(--primary);
-      margin-bottom: 20px;
-    }
+/* ===== HEADER ===== */
+header {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--primary), #154c7a);
+  text-align: center;
+  color: white;
+}
 
-    /* LISTS */
-    ul {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      gap: 12px;
-    }
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
 
-    ul li {
-      padding-left: 22px;
-      position: relative;
-    }
+header p {
+  max-width: 600px;
+  margin: auto;
+}
 
-    ul li::before {
-      content: "✓";
-      color: var(--secondary);
-      position: absolute;
-      left: 0;
-      font-weight: bold;
-    }
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
 
-    /* BUTTON */
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 28px;
-      background: var(--primary);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: 0.3s ease;
-      border: 2px solid var(--primary);
-    }
+/* ===== SECTIONS ===== */
+section {
+  background: var(--card);
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px var(--shadow);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
 
-    .btn:hover {
-      background: white;
-      color: var(--primary);
-    }
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-    .highlight {
-      color: var(--secondary);
-      font-weight: 600;
-    }
+h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
 
-    /* ===== RESPONSIVE IMPROVEMENTS ===== */
+/* ===== LISTS ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
 
-    /* Tablet / Landscape Mode */
-    @media (min-width: 768px) {
+ul li {
+  padding-left: 22px;
+  position: relative;
+}
 
-      #services ul,
-      #tools ul {
-        grid-template-columns: repeat(2, 1fr);
-      }
+ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: bold;
+}
 
-      section {
-        padding: 50px;
-      }
-    }
+/* ===== BUTTON ===== */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  color: white;
+  transition: 0.3s;
+}
 
-    /* Large Screens */
-    @media (min-width: 1024px) {
-      .container {
-        max-width: 1000px;
-      }
-    }
+.btn:hover {
+  background: white;
+  color: var(--primary);
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: var(--primary);
-      color: white;
-      font-size: 0.95rem;
-      margin-top: 40px;
-    }
-  </style>
+/* ===== CONSULTATION HIGHLIGHT ===== */
+#consultation {
+  background: linear-gradient(135deg, var(--primary), #1f4f7a);
+  color: white;
+}
+
+#consultation h2 {
+  color: white;
+}
+
+#consultation .btn {
+  background: white;
+  color: var(--primary);
+  border: none;
+}
+
+#consultation .btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 768px) {
+
+  #services ul,
+  #tools ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--primary);
+  color: white;
+}
+</style>
 </head>
 
 <body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">MJC</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#consultation">Consult</a></li>
+  </ul>
+</nav>
 
 <header>
   <h1>Melvin Jay Canoy</h1>
@@ -167,45 +220,65 @@
 
 <main class="container">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I provide structured and accurate bookkeeping services to help businesses stay financially organized. My focus is simple: maintain clean records, reconcile accounts properly, and deliver clear financial reports that support smart business decisions.</p>
-    <p class="highlight">Serving clients remotely worldwide.</p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I provide structured and accurate bookkeeping services to help businesses stay financially organized. My focus is maintaining clean records, reconciling accounts properly, and delivering clear financial reports that support smart decisions.</p>
+  <p><strong>Serving clients remotely worldwide.</strong></p>
+</section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Full-Service Bookkeeping (Weekly / Monthly)</li>
-      <li>Bank & Credit Card Reconciliation</li>
-      <li>Accounts Payable & Accounts Receivable</li>
-      <li>Financial Statement Preparation</li>
-      <li>Payroll Processing & Recording</li>
-      <li>Book Cleanup & Catch-Up Work</li>
-    </ul>
-  </section>
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Full-Service Bookkeeping (Weekly / Monthly)</li>
+    <li>Bank & Credit Card Reconciliation</li>
+    <li>Accounts Payable & Accounts Receivable</li>
+    <li>Financial Statement Preparation</li>
+    <li>Payroll Processing & Recording</li>
+    <li>Book Cleanup & Catch-Up Work</li>
+  </ul>
+</section>
 
-  <section id="tools">
-    <h2>Tools & Software</h2>
-    <ul>
-      <li>QuickBooks Online</li>
-      <li>Xero</li>
-      <li>Microsoft Excel</li>
-      <li>Google Sheets</li>
-    </ul>
-  </section>
+<section id="tools">
+  <h2>Tools & Software</h2>
+  <ul>
+    <li>QuickBooks Online</li>
+    <li>Xero</li>
+    <li>Microsoft Excel</li>
+    <li>Google Sheets</li>
+  </ul>
+</section>
 
-  <section id="cta">
-    <h2>Let’s Work Together</h2>
-    <p>If your books are behind, messy, or need consistent maintenance, I can help you get them organized and up to date.</p>
-    <a class="btn" href="mailto:melvincanoy0929@gmail.com">Request a Free Consultation</a>
-  </section>
+<section id="consultation">
+  <h2>Free Consultation</h2>
+  <p>If your books are behind or need professional maintenance, let’s get them organized properly.</p>
+
+  <a class="btn" href="mailto:melvincanoy0929@gmail.com">Email Me</a>
+  <a class="btn" href="https://facebook.com/melvinjaycanoy" target="_blank">Facebook</a>
+  <a class="btn" href="https://www.instagram.com/itsm3lv_asusual" target="_blank">Instagram</a>
+  <a class="btn" href="https://t.me/melvx1" target="_blank">Telegram</a>
+  <a class="btn" href="https://wa.me/639762268109" target="_blank">WhatsApp</a>
+
+</section>
 
 </main>
 
 <footer>
   © 2026 Melvin Jay Canoy — Bookkeeping & Accounting Services
 </footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight * 0.85;
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < trigger) {
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
